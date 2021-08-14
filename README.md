@@ -1,13 +1,13 @@
 # PlumedMarkdown
 
-This extension adds PLUMED input file support to !(https://github.com/Python-Markdown/markdown)[Python-Markdown]
+This extension adds PLUMED input file support to [Python-Markdown](https://github.com/Python-Markdown/markdown)
 
 # Installation
 
 You can install this using the command:
 
 ````
-pip installl PlumedMarkdown
+pip install PlumedMarkdown
 ````
 
 # Usage
