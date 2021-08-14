@@ -2,7 +2,7 @@
 
 This extension adds PLUMED input file support to [Python-Markdown](https://github.com/Python-Markdown/markdown)
 
-# Installation
+## Installation
 
 You can install this using the command:
 
@@ -10,7 +10,7 @@ You can install this using the command:
 pip install PlumedMarkdown
 ````
 
-# Usage
+## Usage
 
 You can include PLUMED input files in your markdown files between `\plumedfile` and `\endplumedfile` as shown below:
 
