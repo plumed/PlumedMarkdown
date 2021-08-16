@@ -6,8 +6,8 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
      name='PlumedMarkdown',  
-     version='0.1',
-     scripts=['PlumedMarkdown'] ,
+     version='0.2',
+     install_requires=['markdown','PlumedToHTML'],
      author="Gareth Tribello",
      author_email="gareth.tribello@gmail.com",
      description="An extension for python markdown that allows you inlcude pretified HTML for PLUMED files",
