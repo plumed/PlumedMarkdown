@@ -1,6 +1,6 @@
 import re
 import xml.etree.ElementTree as etree
-from PlumedToHTML import get_html, get_html_header
+from PlumedToHTML import test_and_get_html, get_html_header
 from markdown.preprocessors import Preprocessor
 from markdown.postprocessors import Postprocessor
 from markdown.extensions import Extension
@@ -24,7 +24,7 @@ class PlumedProcessor(Preprocessor):
          num = 1
          for plumed_block_start, plumed_block_end in reversed(plumed_blocks):
              # Retrieve the html that is output by plumed
-             html = get_html( '\n'.join(lines[plumed_block_start+1:plumed_block_end]), "plinp" + str(num) )
+             html = test_and_get_html( '\n'.join(lines[plumed_block_start+1:plumed_block_end]), "plinp" + str(num) )
              placeholder = self.md.htmlStash.store(html) 
              lines[plumed_block_start:plumed_block_end+1] = [placeholder]
              num = num + 1
